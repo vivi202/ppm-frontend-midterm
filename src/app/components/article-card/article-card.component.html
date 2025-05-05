@@ -4,8 +4,8 @@
   }
   <div class="article-card-content">
     <header>
-     <span class="category">Manufacturing</span>
-      <h1 class="article-card-heading" [class.is-main-article]="isMainArticle()" ><a href="#"> {{ heading() }} </a></h1>
+     <span class="category">{{ category()}}</span>
+      <h2 class="article-card-heading" [class.is-main-article]="isMainArticle()" ><a href="#" attr.aria-label="Read more about {{ heading() }}"> {{ heading() }} </a></h2>
     </header>
     @if(summary() !== "") {
       <p class="article-card-summary"> {{ summary() }}</p>

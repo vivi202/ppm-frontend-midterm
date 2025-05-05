@@ -8,7 +8,7 @@ import { Component,input } from '@angular/core';
 })
 export class ArticleCardComponent {
   img = input("");
-  category = input("");
+  category = input("Manufacturing");
   heading = input("");
   summary = input("");
   isHorizontal= input(false);
