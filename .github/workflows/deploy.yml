@@ -27,5 +27,7 @@ jobs:
     - name: Deploy to GitHub Pages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      permissions:
+        contents: write
       run: npx angular-cli-ghpages --dir=dist/ppm-frontend-midterm/browser
 
