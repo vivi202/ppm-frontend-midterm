@@ -31,6 +31,11 @@
     text-decoration: underline;
     color: #7ca3b6;
   }
+  border-bottom: solid 2px #e1e1e1;
+}
+
+.disable-border-bottom {
+  border-bottom: none;
 }
 
 .article-card-category {

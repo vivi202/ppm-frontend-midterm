@@ -12,5 +12,6 @@ export class ArticleCardComponent {
   heading = input("");
   summary = input("");
   isHorizontal= input(false);
+  disableBorderBottom = input(false);
   isMainArticle = input(false);
 }

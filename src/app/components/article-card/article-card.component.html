@@ -1,4 +1,4 @@
-<article class="article-card" [class.horizontal]="isHorizontal()" [class.vertical]="!isHorizontal()">
+<article class="article-card" [class.horizontal]="isHorizontal()" [class.vertical]="!isHorizontal()" [class.disable-border-bottom]="disableBorderBottom()">
   @if(img() !== ""){
       <img  class="responsive-img" src="{{ img() }}" alt="test">
   }
