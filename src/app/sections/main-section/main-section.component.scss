@@ -5,7 +5,7 @@
 }
 .vertical-section {
   margin: 0;
-  padding: 0;
+  padding: 1rem;
 }
 
 .btn-more {
@@ -27,6 +27,7 @@
   font-size: var.$size-xl;
   margin: 0;
   padding: 0;
+  border-bottom: solid 1px #eaeaea;
 }
 
 .business-news {
