@@ -1,0 +1,6 @@
+<details class="accordion-item" (toggle)="toggled($event)" #details>
+  <summary>
+    <ng-content select="[accordion-item-title]"></ng-content>
+  </summary>
+  <ng-content> </ng-content>
+</details>

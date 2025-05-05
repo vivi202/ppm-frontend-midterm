@@ -1,0 +1,45 @@
+<nav aria-label="city navigation" class="city-nav">
+
+  <div class="city-nav-left">
+    <h1 class="city-nav-branding">LOREM IPSUM</h1>
+    <button class="select-city" (click)="toggleCityDropdown()">Select a city<fa-icon [icon]="faCaretDown"
+        class="user-icon"></fa-icon></button>
+  </div>
+
+  @if (isDropdownCityOpen) {
+  <div class="city-list-dropdown">
+    <ul class="city-list">
+      @for (city of cities; track city){
+      <li><a href="#">{{ city }}</a></li>
+      }
+    </ul>
+  </div>
+  }
+  <button class="sign-in-btn" (click)="toggleSignInDropdown()" aria-label="Sign in"><fa-icon [icon]="faUser"
+      class="user-icon"></fa-icon></button>
+  @if (isDropdownSignInOpen) {
+  <ul class="sign-in-dropdown sign-in-dropdown-items">
+    <li>
+      <a href="#">
+        <strong>
+          SignIn
+        </strong>
+        <small>
+          Existings Members
+        </small>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <strong>
+          Become a member
+        </strong>
+        <small>
+          It's FREE!
+        </small>
+      </a>
+    </li>
+  </ul>
+  }
+
+</nav>

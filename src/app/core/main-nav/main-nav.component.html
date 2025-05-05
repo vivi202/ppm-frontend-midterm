@@ -1,0 +1,110 @@
+<nav aria-label="Market navigation" class="main-nav">
+  <button class="main-nav-hamburger-btn" (click)="toggleHamburger()" aria-label="Toggle hamburger menu">
+    @if (isHamburgerOpen) {
+      <fa-icon [icon]="faXmark" class="bars-icon"></fa-icon>
+    } @else {
+      <fa-icon [icon]="faBars" class="bars-icon"></fa-icon>
+    }
+  </button>
+  @if (isHamburgerOpen) {
+    <div class="main-nav-hamburger-dropdown">
+      <section >
+        <ul class="list mobile-list">
+          <li><a class="nav-link" href="#">auctor imperdiet</a></li>
+          <li><a class="nav-link" href="#">pharetra</a></li>
+          <li><a class="nav-link" href="#">magna sit amet</a></li>
+          <li><a class="nav-link" href="#">eleifend</a></li>
+          <li><a class="nav-link" href="#">facilisis</a></li>
+          <li><a class="nav-link" href="#">Donec accumsan</a></li>
+          <li><a class="nav-link" href="#">Maecenas vehicula </a></li>
+          <li><a class="nav-link" href="#">lectus malesuada</a></li>
+          <li><a class="nav-link" href="#">convallis</a></li>
+          <li><a class="nav-link" href="#">mauris</a></li>
+          <li><a class="nav-link" href="#">faucibus</a></li>
+          <li><a class="nav-link" href="#">consequat</a></li>
+          <li><a class="nav-link" href="#">Vivamus</a></li>
+        </ul>
+      </section>
+      <button class="main-nav-subscribe-btn">subscribe</button>
+      <app-accordion>
+        <app-accordion-item>
+          <div class="accordion-title" accordion-item-title >
+            <span >Aenean & luctus</span>
+          </div>
+          <app-links-menu>
+            <li><a class="nav-link" href="#">quis enim</a></li>
+            <li><a class="nav-link" href="#">Lists</a></li>
+            <li><a class="nav-link" href="#">estibulum at mollis</a></li>
+            <li><a class="nav-link" href="#">commodo</a></li>
+            <li><a class="nav-link" href="#">mauris</a></li>
+            <li><a class="nav-link" href="#">lacus pharetra</a></li>
+            <li><a class="nav-link" href="#">Residential Real Estate</a></li>
+            <li><a class="nav-link" href="#">augue convallis</a></li>
+            <li><a class="nav-link" href="#">tellus eget</a></li>
+            <li><a class="nav-link" href="#">ligula velit </a></li>
+            <li><a class="nav-link" href="#">Vivamus consequat</a></li>
+            <li><a class="nav-link" href="#">convallis</a></li>
+            <li><a class="nav-link" href="#">augue</a></li>
+          </app-links-menu>
+        </app-accordion-item>
+        <app-accordion-item>
+        <div accordion-item-title class="accordion-title" >
+          <span >Maecenas vehicula </span>
+        </div>
+        <app-links-menu>
+          <li><a class="nav-link" href="#">rutrum elit</a></li>
+          <li><a class="nav-link" href="#">Lists</a></li>
+          <li><a class="nav-link" href="#">dui vitae ornare</a></li>
+          <li><a class="nav-link" href="#">varius</a></li>
+          <li><a class="nav-link" href="#">elementum</a></li>
+          <li><a class="nav-link" href="#">eleifend lorem</a></li>
+          <li><a class="nav-link" href="#">Vestibulum Cras ipsum</a></li>
+          <li><a class="nav-link" href="#">Vestibulum Vivamus</a></li>
+          <li><a class="nav-link" href="#">magna</a></li>
+        </app-links-menu>
+        </app-accordion-item>
+
+        <app-accordion-item>
+        <div accordion-item-title class="accordion-title" >
+          <span >massa</span>
+        </div>
+        <app-links-menu>
+          <li><a class="nav-link" href="#">semper mattis</a></li>
+          <li><a class="nav-link" href="#">luctus</a></li>
+          <li><a class="nav-link" href="#">quis faucibus ligula</a></li>
+          <li><a class="nav-link" href="#">tortor</a></li>
+          <li><a class="nav-link" href="#">faucibus</a></li>
+          <li><a class="nav-link" href="#">tristique scelerisque</a></li>
+          <li><a class="nav-link" href="#">commodo tortor tellus</a></li>
+          <li><a class="nav-link" href="#">Vivamus leo</a></li>
+          <li><a class="nav-link" href="#">nulla</a></li>
+        </app-links-menu>
+        </app-accordion-item>
+      </app-accordion>
+
+    </div>
+  }
+
+  <div class="market-logo"></div>
+
+  <button class="main-nav-search-btn" (click)="toggleSearch()" aria-label="Search">
+    @if (isSearchOpen){
+    <fa-icon [icon]="faXmark" class="search-xmark-icon"></fa-icon>
+    } @else {
+    <fa-icon [icon]="faSearch" class="search-icon"></fa-icon>
+    }
+  </button>
+  @if (isSearchOpen) {
+    <div class="main-nav-search">
+      <div class="search-responsive">
+        <div class="search-bar">
+        <fa-icon [icon]="faSearch" class="search-bar-icon"></fa-icon>
+        <input class="search-bar-input" type="search" placeholder="Search">
+      <button class="arrow-btn">  <fa-icon [icon]="faArrowRight"></fa-icon>
+
+</button>
+      </div>
+    </div>
+    </div>
+  }
+</nav>

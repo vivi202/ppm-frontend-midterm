@@ -1,0 +1,9 @@
+<section class="horizontal-section">
+  <a href="#" class="horizontal-section-title" >
+    <h1 >{{ title() }}</h1>
+    <span class="see-more" >See More <fa-icon [icon]="faAngleRight"> </fa-icon></span>
+  </a>
+  <div class="horizontal-section-content" [class.overflow_x]="scroll_x()">
+    <ng-content></ng-content>
+  </div>
+</section>

@@ -1,0 +1,54 @@
+@use 'var';
+/* Some utility classes like containers */
+
+
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* the main responsive container class the site is developed usign mobile first principles so we use min-width*/
+
+@media (min-width: var.$breakpoint-xs ) {
+  .container {
+    width: var.$breakpoint-xs;
+  }
+}
+
+@media (min-width: var.$breakpoint-sm ) {
+   .container {
+    width: var.$breakpoint-sm;
+  }
+
+}
+
+@media (min-width: var.$breakpoint-md ) {
+  .container {
+    width: var.$breakpoint-md;
+  }
+
+}
+
+@media (min-width: var.$breakpoint-lg ) {
+  .container {
+    width: var.$breakpoint-lg;
+  }
+}
+
+
+@media (min-width: var.$breakpoint-xl ) {
+  .container {
+    width: var.$breakpoint-xl;
+  }
+
+}
+
+@media (min-width: var.$breakpoint-2xl ) {
+
+  .container {
+    width: var.$breakpoint-2xl;
+  }
+
+}

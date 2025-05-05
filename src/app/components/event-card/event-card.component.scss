@@ -1,0 +1,101 @@
+@use 'var';
+:host {
+  padding: 0;
+  margin: 0;
+  flex: 1 0 250px;
+}
+
+.event-card {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  background-color: #f8f5ef;
+}
+
+.event-card-link {
+  position: absolute;
+  inset:0;
+  font-size: 0;
+  text-decoration: none;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.event-card-link:focus {
+}
+
+.event-card-header {
+  padding: 1rem;
+  margin: 0;
+  background-color: #f8f5ef;
+  display: flex;
+  gap: 1rem;
+
+  time {
+    font-size: var.$size-sm;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+}
+
+.icon {
+  color: #ae9859;
+}
+
+.event-card-content {
+  padding: 1rem;
+  flex-grow: 1;
+  h2 {
+    margin: 0 0 0.75rem 0;
+    padding: 0;
+    font-size: var.$size-base;
+    color: #212121;
+  }
+ p {
+  font-size: var.$size-xs;
+  padding: 0;
+  margin: 0;
+  color: #616161;
+  line-height: 1.5;
+}
+}
+
+
+
+@media (min-width: var.$breakpoint-sm ) {
+
+}
+
+@media (min-width: var.$breakpoint-md ) {
+
+}
+
+@media (min-width: var.$breakpoint-lg ) {
+  :host {
+    flex: 1;
+  }
+}
+
+
+@media (min-width: var.$breakpoint-xl ) {
+
+}
+
+@media (min-width: var.$breakpoint-2xl ) {
+
+}
+

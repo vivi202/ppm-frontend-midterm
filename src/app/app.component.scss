@@ -1,0 +1,31 @@
+@use 'var';
+
+.main-col {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+
+
+@media (min-width: var.$breakpoint-xs ) {
+}
+
+
+@media (min-width: var.$breakpoint-sm ) {
+}
+
+@media (min-width: var.$breakpoint-md ) {
+}
+
+@media (min-width: var.$breakpoint-lg ) {
+}
+
+
+@media (min-width: var.$breakpoint-xl ) {
+}
+
+@media (min-width: var.$breakpoint-2xl ) {
+}

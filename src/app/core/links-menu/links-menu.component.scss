@@ -1,0 +1,46 @@
+@use 'var';
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0.2rem;
+  gap: 0.5rem;
+}
+
+@media (min-width: var.$breakpoint-xs ) {
+  .list {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+  }
+
+}
+
+@media (min-width: var.$breakpoint-sm ) {
+
+}
+
+@media (min-width: var.$breakpoint-md ) {
+  .main-nav-subscribe-btn {
+    display: none;
+  }
+
+}
+
+@media (min-width: var.$breakpoint-lg ) {
+  .list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+@media (min-width: var.$breakpoint-xl ) {
+
+
+}
+
+@media (min-width: var.$breakpoint-2xl ) {
+
+}

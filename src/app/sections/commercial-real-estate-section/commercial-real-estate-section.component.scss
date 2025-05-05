@@ -1,0 +1,48 @@
+@use 'var';
+.horizontal-section-left {
+  display: flex;
+  gap: 1rem;
+  flex: 2;
+  padding: 0;
+  margin: 0;
+}
+
+.horizontal-section-right {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: var.$breakpoint-xs ) {
+
+
+}
+
+@media (min-width: var.$breakpoint-sm ) {
+
+}
+
+@media (min-width: var.$breakpoint-md ) {
+
+}
+
+@media (min-width: var.$breakpoint-lg ) {
+  .horizontal-section-right {
+  display: flex;
+    flex-direction: column;
+  gap: 1rem;
+}
+
+
+}
+
+
+@media (min-width: var.$breakpoint-xl ) {
+
+}
+
+@media (min-width: var.$breakpoint-2xl ) {
+
+}

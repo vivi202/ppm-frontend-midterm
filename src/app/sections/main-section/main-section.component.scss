@@ -1,0 +1,135 @@
+@use 'var';
+.main-section {
+  display: flex;
+  flex-direction: column;
+}
+.vertical-section {
+  margin: 0;
+  padding: 0;
+}
+
+.btn-more {
+  color: #4256ed;
+  background-color: transparent;
+  align-self: center;
+  border: solid 1px;
+  padding: 0.6rem 2rem;
+  line-height: 1;
+}
+
+.btn-more:hover {
+  background-color:  #4256ed;
+  color: white;
+}
+
+.vertical-section-heading {
+  align-self: flex-start;
+  font-size: var.$size-xl;
+  margin: 0;
+  padding: 0;
+}
+
+.business-news {
+  display: flex;
+  flex-direction: row;
+  gap: var.$size-xl;
+  margin:0;
+  padding:0;
+  flex-wrap: wrap;
+}
+
+
+.right {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.top-new-row2 {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin:0;
+  padding:0;
+  flex-wrap: wrap;
+}
+
+.top-new-row3 {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin:0;
+  padding:0;
+  flex-wrap: wrap;
+}
+
+
+
+.latest-news {
+  flex: 1;
+}
+
+.your-news {
+  flex: 1;
+}
+
+@media (min-width: var.$breakpoint-xs ) {
+.right {
+  flex-direction: row;
+}
+  .top-new-row2 {
+    flex-wrap: nowrap;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .top-new-row3 {
+    flex-wrap: nowrap;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+}
+
+
+@media (min-width: var.$breakpoint-sm ) {
+
+}
+
+@media (min-width: var.$breakpoint-md ) {
+
+}
+
+@media (min-width: var.$breakpoint-lg ) {
+  .top-news {
+    flex: 1;
+  }
+  .right {
+    flex: 1;
+  }
+  .horizontal-section-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .latest-news {
+    flex: 1.5;
+  }
+
+  .your-news {
+    flex: 1;
+  }
+
+  .business-news {
+    flex-wrap: nowrap;
+  }
+
+}
+
+
+@media (min-width: var.$breakpoint-xl ) {
+}
+
+@media (min-width: var.$breakpoint-2xl ) {
+}

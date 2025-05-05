@@ -1,0 +1,109 @@
+@use 'var';
+$nav-height: 32px;
+
+.city-nav {
+  display: flex;
+  background-color: #f1f1f1;
+  justify-content: space-between;
+  align-items: center;
+  height: $nav-height;
+}
+
+.city-nav-branding {
+  border-right: solid 2px black;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  font-size: 0.7rem;
+}
+
+.user-icon {
+  position: relative;
+  top: 0.1rem;
+  margin-left: 0.22rem;
+}
+
+.select-city {
+  font-size: var.$size-xs;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.city-nav-left {
+  display: flex;
+  marigin: 20px;
+  justify-content: space-evenly;
+}
+
+.city-list-dropdown {
+  position: absolute;
+  top: $nav-height;
+  background-color: #ffffff;
+  width: 100%;
+  height: calc(100vh - $nav-height);
+  z-index: 99;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+}
+
+.city-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  list-style-type: none;
+
+  li {
+    a {
+      color: #222;
+      font-size: var.$size-sm;
+      text-decoration: none;
+    }
+  }
+}
+
+.sign-in-dropdown {
+  position: absolute;
+  top: $nav-height;
+  right: 0;
+  padding: 1rem;
+  padding-top: 0.5rem;
+  padding-right: 5rem;
+  margin: 0;
+  z-index: 99;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .15);
+  background-color: #ffffff;
+}
+
+.sign-in-btn {
+  border: none;
+  padding: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.sign-in-dropdown-items {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  strong {
+    font-size: var.$size-sm;
+    font-weight: 500;
+    color: #256686;
+    display: block;
+  }
+
+  small {
+    font-size: var.$size-xs;
+    font-weight: 475;
+    color: #707070;
+    display: block;
+  }
+}

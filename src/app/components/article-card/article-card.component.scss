@@ -1,0 +1,110 @@
+@use 'var';
+:host {
+  flex: 1 1 220px;
+}
+
+:host-context(.horizontal-section-left,.horizontal-section-right) .article-card {
+  min-height: 100%;
+  min-width: 200px;
+}
+
+
+.responsive-img {
+  max-width: 100%;
+  margin: 0.2rem;
+  padding: 0.5rem;
+  padding-left:0;
+}
+
+.article-card {
+  padding: 0.5rem;
+  padding-left: 0;
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: #7ca3b6;
+  }
+}
+
+.article-card-category {
+  margin: 0.5rem 0;
+  margin-bottom: 0;
+  color: #333;
+  font-size: var.$size-sm;
+  font-weight: 300;
+}
+
+.article-card-heading {
+  color: inherit;
+  margin: 0.2rem 0 ;
+  padding: 0.2rem 0;
+  text-align: left;
+  font-size: var.$size-base;
+  line-height: 1.25;
+}
+
+.is-main-article {
+  font-size: var.$size-3xl;
+}
+
+.article-card-summary {
+  padding:0.1rem 0;
+  margin: 0.1rem 0;
+  font-size: var.$size-base;
+  line-height: 1.5;
+  word-wrap: break-word;
+  color: #222;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+@media (min-width: var.$breakpoint-xs ) {
+:host {
+  flex: 1 1;
+}
+}
+
+@media (min-width: var.$breakpoint-sm ) {
+
+}
+
+@media (min-width: var.$breakpoint-md ) {
+
+}
+
+@media (min-width: var.$breakpoint-lg ) {
+
+  .horizontal {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    p {
+      display: none;
+    }
+  }
+  :host {
+    flex: 1 1;
+  }
+}
+
+
+@media (min-width: var.$breakpoint-xl ) {
+}
+
+@media (min-width: var.$breakpoint-2xl ) {
+
+}

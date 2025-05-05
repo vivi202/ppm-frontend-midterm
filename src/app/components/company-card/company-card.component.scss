@@ -1,0 +1,49 @@
+@use 'var';
+:host {
+  flex: 1 1 300px;
+  min-width: 300px;
+}
+
+.company-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+  margin: 0rem;
+  h2 {
+    padding: 0.2rem 0;
+    margin: 0.2rem 0;
+  }
+  p {
+    padding: 0;
+    margin: 0.5rem 0;
+  }
+  span {
+    padding: 0;
+    margin: 0;
+    font-size: var.$size-xs;
+    color: #717171;
+  }
+
+  span.company-number {
+    align-self: flex-end;
+    color: black;
+  }
+}
+
+.company-card-link {
+  position: absolute;
+  inset: 0;
+  font-size: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+@media (min-width: var.$breakpoint-lg ) {
+  :host {
+    min-width: 0;
+  }
+}

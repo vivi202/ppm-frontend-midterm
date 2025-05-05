@@ -1,0 +1,19 @@
+@use 'utility';
+@use 'var';
+@import '../../node_modules/modern-normalize/modern-normalize.css';
+html {
+font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+body {
+  padding: 0rem;
+  margin: 0;
+}
+
+main {
+}
+
+* {
+  font-size: 16px;
+}
+

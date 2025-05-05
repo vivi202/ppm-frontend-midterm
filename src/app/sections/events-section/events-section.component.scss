@@ -1,0 +1,67 @@
+@use 'var';
+
+.event-section-left {
+  display: flex;
+  gap: 1rem;
+  overflow-x: scroll;
+  padding: 1rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.event-section-right {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  h1 {
+    font-size: var.$size-base;
+    padding:0;
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    padding: 0;
+    margin: 0.5rem 0rem;
+    font-size: var.$size-sm;
+  }
+  a {
+    margin: 0.5rem 0rem;
+    text-decoration: none;
+    color: #256686;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: var.$breakpoint-sm ) {
+
+}
+
+@media (min-width: var.$breakpoint-md ) {
+
+}
+
+@media (min-width: var.$breakpoint-lg ) {
+.event-section-left {
+  display: flex;
+  flex: 4;
+  gap: 1rem;
+  overflow-x: visible;
+}
+.event-section-right {
+    flex:1;
+    padding-left: 1rem;
+    border-left: solid 1px #e1e1e1;
+  }
+}
+
+
+@media (min-width: var.$breakpoint-xl ) {
+
+
+}
+
+@media (min-width: var.$breakpoint-2xl ) {
+
+
+}

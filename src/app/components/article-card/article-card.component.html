@@ -1,0 +1,13 @@
+<article class="article-card" [class.horizontal]="isHorizontal()" [class.vertical]="!isHorizontal()">
+  @if(img() !== ""){
+      <img  class="responsive-img" src="{{ img() }}" alt="test">
+  }
+  <div class="article-card-content">
+    <header>
+      <h1 class="article-card-heading" [class.is-main-article]="isMainArticle()" ><a href="#"> {{ heading() }} </a></h1>
+    </header>
+    @if(summary() !== "") {
+      <p class="article-card-summary"> {{ summary() }}</p>
+    }
+  </div>
+</article>

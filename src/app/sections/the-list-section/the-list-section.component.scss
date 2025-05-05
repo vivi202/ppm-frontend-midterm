@@ -1,0 +1,49 @@
+@use 'var';
+.list-section-left {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: scroll;
+  padding: 1rem 0;
+}
+
+.list-section-right {
+  header {
+    h1 {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+  }
+  display: flex;
+  gap: 1rem;
+}
+
+@media (min-width: var.$breakpoint-xs ) {
+
+}
+
+@media (min-width: var.$breakpoint-sm ) {
+
+}
+
+@media (min-width: var.$breakpoint-md ) {
+
+}
+
+@media (min-width: var.$breakpoint-lg ) {
+  .list-section-left {
+    flex: 4 1;
+    overflow-x: visible;
+  }
+.list-section-right {
+  display: flex;
+  gap: 1rem;
+  flex: 1 1;
+}
+}
+
+
+@media (min-width: var.$breakpoint-xl ) {
+}
+
+@media (min-width: var.$breakpoint-2xl ) {
+}
