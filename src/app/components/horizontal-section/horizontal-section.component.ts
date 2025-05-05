@@ -11,5 +11,6 @@ import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 export class HorizontalSectionComponent {
   faAngleRight=faAngleRight;
   title=input("");
+  border=input(true);
   scroll_x=input(false);
 }
